@@ -34,19 +34,17 @@ class QiitaScrapyPipeline(object):
         return item
 
     def save_post(self, item):
-
         if self.find_post(item['url']):
             return
 
         item['date'] = self.translate(item['date'])
-        print(item['date'])
 
         db = self.get_database()
         db.execute(
             'INSERT INTO post (title, url, date) VALUES (?, ?, ?)', (
-                item['title'],
+                item['title'][0],
                 item['url'],
-                item['date'],
+                item['date']
             )
         )
         db.commit()
