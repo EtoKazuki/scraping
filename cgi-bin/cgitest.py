@@ -1,7 +1,9 @@
-# -*- conding:utf-8 -*-
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
 
 import cgi
 
+print("Content-Type: text/html")
 html_body= """
 <!DOCTYPE html>
 <html>
@@ -83,4 +85,4 @@ html_body= """
 </html>
 """
 
-print(html)
+print(html_body)
