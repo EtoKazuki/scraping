@@ -1,0 +1,43 @@
+header{
+  background-color: gray;
+  height: 100px;
+  font-family: sans-serif;
+}
+
+header p{
+  font-size: 30px;
+}
+
+header li{
+  list-style-type: none;
+  float: left;
+  padding-right: 20px;
+}
+
+.main{
+  text-align: center;
+}
+
+.box{
+  display:inline-block;
+  background-color: white;
+  border:1px solid black;
+  margin:10px;
+  border-radius:10px;
+  width:30%;
+  height:200px;
+}
+
+@media screen and (max-width: 960px){
+  .box{
+    width:45%;
+    height:200px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .box{
+    width:90%;
+    height:200px;
+  }
+}

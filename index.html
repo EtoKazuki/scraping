@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>scraping</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(window).on("load resize", function() {
+        var width = $("#target").width();
+        console.log(width);
+        $(".box").css({"height": width});
+      })
+    </script>
+  </head>
+  <body>
+    <header>
+      <p>Scraping</p>
+      <ul>
+        <li class="tech"><a href="../cgi-bin/cgitest.py">技術</a></li>
+        <li class="news">ニュース</li>
+        <li class="ivent">イベント</li>
+      </ul>
+    </header>
+  </body>
+</html>
